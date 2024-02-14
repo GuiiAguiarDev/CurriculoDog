@@ -1,0 +1,464 @@
+body{
+    background-image: url("animacao.svg");
+   
+}
+
+p, li{
+    font-size: 1.2rem;
+    
+}
+
+li{
+    line-height: 1.95em;
+}
+
+.grid{
+    display: grid;
+    max-width: 1300px;
+    margin: 0 auto;
+	grid-gap: 20px;
+
+}
+
+div{
+
+    margin-top: 35px;
+}
+
+.item{
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 10px;
+    border-top-right-radius: 50%;
+      
+    
+    
+}
+
+
+
+.grid-template-areas-1{
+    grid-template-columns: 410px 1fr 2fr;
+    grid-template-rows: 30% 30% 35%;
+   
+    grid-template-areas:
+    "esquerda-1 ponta-ponta-1 ponta-ponta-1"
+    "esquerda-2 meio-1 meio-2"
+    
+    "esquerda-3 ponta-ponta-2 ponta-ponta-2"
+  
+   
+  
+   
+    ;
+}
+
+
+
+img{
+    max-width: 380px;
+    background-size: cover;
+    /*Imagem só centraliza se vc colocar ela como block*/
+    display: block;
+    margin: 0 auto;
+
+}
+
+.esquerda-1 {
+	grid-area: esquerda-1;
+    background: transparent;;
+   
+  
+}
+
+.esquerda-2 {
+	grid-area: esquerda-2;
+    background: #eae0cc;
+    
+   
+}
+.center{
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.esquerda-3 {
+	grid-area: esquerda-3;
+    background: #4d6a6d;
+}
+
+.esquerda-4 {
+	grid-area: esquerda-4;
+}
+
+.esquerda-5 {
+	grid-area: esquerda-5;
+}
+
+.esquerda-6 {
+	grid-area: esquerda-6;
+}
+
+.ponta-ponta-1{
+    grid-area: ponta-ponta-1;
+    background: #4d6a6d;
+    line-height: 0.95em;
+    position: relative;
+
+    
+    ;
+    
+}
+
+
+.ponta-ponta-1 img{
+    position: absolute;
+    max-width: none;
+  
+    top:50px;
+    right: 40px;
+    top:-5px
+}
+
+
+.ponta-ponta-2{
+    grid-area: ponta-ponta-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #a0a083;
+    order: 1;
+   
+
+}
+
+
+
+.ponta-ponta-3{
+    grid-area: ponta-ponta-3;
+    
+}
+
+
+
+
+
+/*No meu Html fiz uma outra caixa para segurar para eu conseguir movimentar, depois
+defini ela como flex mesmo fazendo tudo em grid e assim coloquei onde eu quis o item
+utilizando flex em line e flex em column*/
+
+
+.meio-1{
+    grid-area: meio-1;
+    background: #a0a083;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.segundo{
+   
+   
+    background-image: url(foto-perfil.jpg) 50px;
+    height: 75px;
+    width: 75px;
+    
+}
+
+.segundo p{
+    font-size: 30px;
+  
+    border: solid yellow;
+}
+
+.meio-2{
+    grid-area: meio-2;
+    max-height: 280px;
+    background: #798478;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.flex p{
+    padding: 20px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Cores
+*/
+
+.cor1{
+    background-color: #2b1d10;
+}
+
+
+.cor2{
+    background-color: #20160c;
+}
+
+
+.cor3{
+    background-color: #160f08;
+}
+
+
+.cor4{
+    background-color: #0b0704;
+}
+
+.cor5{
+    background-color: #000000;
+}
+
+@media (max-width: 1011px) {
+
+
+    li{
+        line-height: 1.50em;
+    }
+
+
+    .ponta-ponta-1{
+    
+        order: 1;
+    }
+
+    .esquerda-2 {
+        grid-area: esquerda-2;
+   
+        order: 3;
+  
+        
+       
+    }
+
+
+    .esquerda-3{
+  
+        order: 4;
+    }
+
+    .meio-2{
+        order: 5;
+   
+    }
+  
+   
+
+   
+
+    .meio-1{
+        order: 6;
+ 
+      
+    }
+
+   
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+       
+    }
+    
+   
+
+   
+    img{
+        max-width: 250px;
+        background-size: cover;
+        display: block;
+    
+        
+    }
+
+    .item{
+       margin-top: 10px;
+    }
+
+    p{
+        text-align: justify;
+    }
+  
+
+    .flex p{
+        padding: 0px;
+        font-size: 16px;
+       
+    }
+
+ 
+    p, li{
+        font-size: 1.0rem;
+        
+    }
+
+
+
+
+    .esquerda-3 > .flex > p {
+    
+       display: flex;
+        padding: 5px;
+       word-spacing: 5rem;
+
+        
+        
+    }
+
+
+
+    
+
+    /*Tirando o espaço automatico que o ul coloca, para qualquer tag se vc quer resetar algo
+    é só ir no inspecioanr e ver o que esta fazendo e zerar*/
+        ul{
+        padding-inline-start: 0px;
+    }
+    ul > li{
+        text-decoration: none;
+        list-style: none;
+        text-align: start;
+       
+    }
+
+
+
+
+  
+
+   
+
+
+    .ponta-ponta-1 img{
+        position: absolute;
+        top:-10px;
+        right: -10px;
+        
+    
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: .3s;
+
+}
+
+/*Parte do arquivo js de animação-ao-scroll, animação ao scroll*/
+/*Lmebrando que esse js é para funcionar caso a pessoa esteja com js desabilitado ou com navegador antigo*/
+.js .js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: .3s;
+}
+
+
+
+.js .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: .3s;
+}
+
+/*Parte do arquivo js de animação-ao-scroll, animação ao scroll*/
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.textoRodape{
+   display: flex;
+   align-items: center;
+   background-color: #b1a388;
+   border-top-right-radius: 50%;
+   border-top-left-radius: 90%;
+}
+
+
+.background-rodape{
+   
+    height: 33px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 70%;
+     background: #dbac94;
+    
+}
+
+.background-rodape p {
+     
+    font-weight: bolder;
+    color:black;
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.iconeRodape{
+    display: flex;
+
+    padding: 10px;
+
+    
+}
+
+
+.iconeRodape img{
+    padding: 15px;
+ 
+
+}
+
+footer div {
+    margin-top: 0px;
+
+}
+
+

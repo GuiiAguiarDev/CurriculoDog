@@ -1,0 +1,8 @@
+Observação importante:
+
+Quando for utilizar o absolute e o position, se utilizar o max:width igual já falei anteriormente, ele não vai ficar fixo, porém utilizando o max:width não quer dizer que está errado, no exemplo do projeto do currículo do cachorro, eu utilizei o max Width
+a diferença é que ele vai se movimentar dentro do item que é o relative, ou seja o item que é absoluter vai se movimentar no item que é relative, porém não está errado, ai nesse caso eu tenho que ver um local que fique melhor para fica bom tanto no desktop como mobile e resoluções menores, ou seja eu vou ver quanto vou colocar no top rigth left e etc e vai ficar bom para todos, e também posso utilizar o media query para arrumar tbm como última resolução, mas está certo tbm.
+
+exemplo se eu ver que ta diminuindo e vindo para cima de outras coisas é igual eu falei só modificar o rigth left top e etc ver uma numeração que vai ficar boa tanto para desktop como mobile e etc não quer dizer que está errado, pelo contrario está certo eu só preciso arrumar
+
+Ele vai se movimentar pois está seguindo o site todo, isso não significa que está errado ,pelo contrario está certo, só entender isso, isso com o max:width igual a imagem do cv nesse projeto do dog que fiz
